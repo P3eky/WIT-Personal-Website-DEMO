@@ -1,0 +1,45 @@
+{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	line-height: 1.6;
+	color: #222;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem; /*add padding*/
+}
+
+section {
+	padding: 4rem 2rem;
+	max-width: 800px;
+	margin: 0 auto; /*Center horizontally*/
+}
+
+#projects ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+#projects li {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 1rem;
+	flex: 1 1 250px;
+}
+
+@media (max-width: 600px) {
+	header{
+		flex-direction: column;
+		text-align: center;
+	}
+}
