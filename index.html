@@ -1,44 +1,59 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-	<title>Joe Cardillo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Joey Cardillo</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
+	<!-- Link your new JS file here -->
+	<script src="main.js" defer></script>
 </head>
 <body>
 	<header>
-		<!-- THE JOE CARDILLO WEBSITE-->
+		<!-- THE JOEY CARDILLO WEBSITE-->
 	</header>
 
 	<main>
 		<section id="about">
-			<h1>Joe Cardillo</h1>
+			<h1>Joey Cardillo</h1>
 			<p>ABOUT ME...</p>
-
 		</section>
 
 		<section id="projects">
-			<h3>Project 1 Name</h3>
-			<p>Project description...</p>
-
+			<h2>Projects & Experience</h2>
+			<!-- Empty div for JS to populate buttons -->
+			<div id="filter-buttons"></div>
+			
+			<ul id="project-list">
+				<li data-tags="E-commerce, Web Development, Business">
+					<h3>Lucky Prepper, LLC</h3>
+					<p>Built and maintain an end-to-end e-commerce platform (luckyprepper.com), managing product procurement, inventory, and business administration as the Founding Owner & Operator.</p>
+				</li>
+				<li data-tags="Hardware, CAD, Soldering, C++">
+					<h3>Interactive Storybook</h3>
+					<p>Engineered an interactive children's storybook using custom electronics and 3D solid modeling, earning 1st Place at the NJ TSA State Conference and 5th Place Nationally.</p>
+				</li>
+				<li data-tags="Python, AI/ML, Hackathons">
+					<h3>TiE NJ AI Hackathon</h3>
+					<p>Applied artificial intelligence and machine learning fundamentals to develop a competitive technical project, securing 3rd Place overall at the 2026 New Jersey AI Hackathon.</p>
+				</li>
+				<li data-tags="Digital Audio, Leadership, STEM Education">
+					<h3>STEM Mentorship & Audio Systems</h3>
+					<p>Co-President of the Manalapan TSA chapter and Leadership Intern for Camp Invention, guiding students through engineering challenges alongside university-level study in digital audio.</p>
+				</li>
+			</ul>
 		</section>
 
 		<section id="contact">
 			<h2>Get in Touch</h2>
 			<a href="mailto:joey.cardillo37@gmail.com">joey.cardillo37@gmail.com</a>
 		</section>
-
 	</main>
 
 	<footer>
 		<!-- Small note and year and whatever -->
 	</footer>
-
 </body>
-
 </html>
