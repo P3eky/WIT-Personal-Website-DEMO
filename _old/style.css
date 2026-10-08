@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--ink: #10182B;
+	--navy: #1B2A47;
+	--accent: #5578A6;
+	--bg: #FCFDFE;
+	--bg-alt: #EEF2F7;
+	--border: #DDE4ED;
+}
+
+body {
+	margin: 0;
+	font-family: 'Inter', system-ui, sans-serif;
+	line-height: 1.6;
+	color: var(--ink);
+	background: var(--bg);
+}
+
+h1, h2, h3 {
+	font-family: 'Space Grotesk', sans-serif;
+	color: var(--navy);
+	line-height: 1.2;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 4rem 2rem;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#about h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+#about h1::after {
+	content: "";
+	display: block;
+	width: 48px;
+	height: 3px;
+	background: var(--accent);
+	margin-top: 0.75rem;
+}
+
+#about p {
+	max-width: 60ch;
+}
+
+#projects {
+	background: var(--bg-alt);
+	max-width: 100%;
+}
+
+#projects > * {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#projects ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+#projects li {
+	background: var(--bg);
+	border: 1px solid var(--border);
+	border-top: 3px solid var(--accent);
+	border-radius: 4px;
+	padding: 1rem;
+	flex: 1 1 250px;
+}
+
+a {
+	color: var(--accent);
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+
+a:hover {
+	border-bottom-color: var(--accent);
+}
+
+@media (max-width: 600px) {
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+
+/* --- Filter Button Styles --- */
+#filter-buttons {
+	display: flex;
+	gap: 0.5rem;
+	margin-bottom: 2rem;
+	flex-wrap: wrap;
+}
+
+#filter-buttons button {
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--accent);
+	background: var(--bg);
+	color: var(--accent);
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: inherit;
+	font-weight: 500;
+	transition: all 0.2s ease;
+}
+
+#filter-buttons button:hover {
+	background: var(--bg-alt);
+}
+
+/* Active state for the selected filter */
+#filter-buttons button.active {
+	background: var(--accent);
+	color: var(--bg);
+}
+
+/* Class to hide projects via JS */
+.hidden {
+	display: none !important;
+}
